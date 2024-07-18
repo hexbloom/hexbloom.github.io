@@ -1,0 +1,20 @@
+baseURL = "https://hexbloom.github.io/"
+
+theme = "hugo-bearblog"
+
+title = "hexbloom"
+author = "hexbloom"
+copyright = "Copyright © 2023-2024, hexbloom."
+languageCode = "en-US"
+
+enableRobotsTXT = true
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+[params]
+  description = "hexbloom's video game programming blog"
+  title = "hexbloom"

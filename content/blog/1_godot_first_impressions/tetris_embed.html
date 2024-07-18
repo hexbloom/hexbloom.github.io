@@ -1,0 +1,51 @@
+<style>
+    #container {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+
+    #dummy {
+        margin-top: 87.5%;
+    }
+
+    #element {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    button {
+        background: #f0dfaf;
+        color: #3f3f3f;
+        font-size: 120%;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0.4em 0.8em;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<button id="start" type="button" onclick="startGame()">Click here to play Tetris!</button>
+
+<div id="container" style="display: none;">
+    <div id="dummy"></div>
+    <div id="element">
+        <iframe id="frame"></iframe>
+    </div>
+</div>
+
+<script src="coi-serviceworker.js"></script>
+<script>
+    const startGame = function() {
+        document.getElementById("container").style = "";
+        document.getElementById("frame").src = "tetris.html";
+        document.getElementById("start").remove();
+    }
+</script>

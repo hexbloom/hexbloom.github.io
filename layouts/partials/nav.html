@@ -1,0 +1,10 @@
+<!-- TODO: when games page goes live, remove the line below and add these commented lines -->
+<!-- <a href="{{ "" | relURL }}" class="title"><b>{{ .Site.Title }}</b></a> -->
+<!-- <a href="{{ "" | relURL }}">games</a> -->
+<a href="{{ "blog" | relURL }}" class="title"><b>{{ .Site.Title }}</b></a>
+{{ with .Site.GetPage "/about" }}
+<a href="{{ "about" | relURL }}">about</a>
+{{ end }}
+{{ with .Site.GetPage "/blog" }}
+<a href="{{ "blog" | relURL }}">blog</a>
+{{ end }}
