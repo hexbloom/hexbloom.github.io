@@ -16,5 +16,5 @@ ignoreErrors = ["error-disable-taxonomy"]
   tags = "/blog/:slug"
 
 [params]
-  description = "hexbloom's video game programming blog"
+  description = "trav's video game programming blog"
   title = "hexbloom"
