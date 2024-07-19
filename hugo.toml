@@ -10,6 +10,7 @@ languageCode = "en-US"
 enableRobotsTXT = true
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
+titleCaseStyle = "none"
 
 [permalinks]
   blog = "/:slug/"
