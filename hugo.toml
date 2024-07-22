@@ -4,7 +4,7 @@ theme = "hugo-bearblog"
 
 title = "hexbloom"
 author = "hexbloom"
-copyright = "Copyright © 2023-2024, hexbloom."
+copyright = "© 2023-2024 hexbloom"
 languageCode = "en-US"
 
 enableRobotsTXT = true
@@ -13,9 +13,9 @@ ignoreErrors = ["error-disable-taxonomy"]
 titleCaseStyle = "none"
 
 [permalinks]
-  blog = "/:slug/"
-  tags = "/blog/:slug"
+blog = "/:slug/"
+tags = "/blog/:slug"
 
 [params]
-  description = "trav's video game programming blog"
-  title = "hexbloom"
+description = "trav's video game programming blog"
+title = "hexbloom"
